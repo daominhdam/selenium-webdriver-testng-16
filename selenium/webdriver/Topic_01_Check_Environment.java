@@ -22,12 +22,6 @@ public class Topic_01_Check_Environment {
 	}
 
 	@Test
-	public void TC_01_ValidateCurrentUrl() {
-		String loginPageUrl = driver.getCurrentUrl();
-		Assert.assertEquals(loginPageUrl, "http://demo.guru99.com/v4/");
-	}
-
-	@Test
 	public void TC_02_ValidatePageTitle() {
 		String loginPageTitle = driver.getTitle();
 		Assert.assertEquals(loginPageTitle, "Guru99 Bank Home Page");
@@ -40,6 +34,16 @@ public class Topic_01_Check_Environment {
 
 	@Test
 	public void TC_04_Check() {
+		Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
+	}
+	
+	@Test
+	public void TC_05_Check() {
+		Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
+	}
+	
+	@Test
+	public void TC_06_Check() {
 		Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
 	}
 

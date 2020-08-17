@@ -47,7 +47,6 @@ public class Topic_15_Wait_Part_VI_Fluent {
 						return flag;
 					}
 				});
-
 	}
 
 	@Test

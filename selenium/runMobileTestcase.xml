@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium WebDriver API" parallel="tests" thread-count="3">
+
+	<test name="Run on Firefox browser">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="firefox" />
+		<parameter name="ipaddress" value="192.168.1.15" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+
+	<test name="Run on Chrome browser">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="ipaddress" value="192.168.1.16" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+
+	<test name="Run on Edge browser">
+		<parameter name="platform" value="MAC OS" />
+		<parameter name="browserName" value="edge" />
+		<parameter name="ipaddress" value="192.168.1.17" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+
+</suite> 

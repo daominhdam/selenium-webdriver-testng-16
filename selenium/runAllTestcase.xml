@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium WebDriver API">
+
+	 <suite-files>
+        <suite-file path="runMobileTestcase.xml" />
+        <suite-file path="runWebTestcase.xml" />
+    </suite-files>
+
+</suite> 

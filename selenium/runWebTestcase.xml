@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium WebDriver API" parallel="tests"
+	thread-count="3">
+
+	<test name="Run on Edge browser">
+		<parameter name="platform" value="MAC OS" />
+		<parameter name="browserName" value="edge" />
+		<parameter name="ipaddress" value="192.168.1.17" />
+
+		<packages>
+			<package name="testng" />
+		</packages>
+
+
+	</test>
+
+</suite> 

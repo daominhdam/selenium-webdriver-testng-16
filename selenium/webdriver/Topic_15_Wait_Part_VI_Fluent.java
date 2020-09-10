@@ -16,6 +16,7 @@ import com.google.common.base.Function;
 
 public class Topic_15_Wait_Part_VI_Fluent {
 	WebDriver driver;
+	WebElement element;
 	FluentWait<WebElement> fluentElement;
 
 	@BeforeClass

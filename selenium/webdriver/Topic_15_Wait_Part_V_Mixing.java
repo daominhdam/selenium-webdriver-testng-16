@@ -28,9 +28,7 @@ public class Topic_15_Wait_Part_V_Mixing {
 		driver.get("http://facebook.com");
 
 		// explicit wait
-		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")))
-				.sendKeys("automation@gmail.com");
-		;
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email"))).sendKeys("automation@gmail.com");
 
 		// implicit wait
 		driver.findElement(By.name("login")).click();
@@ -40,8 +38,7 @@ public class Topic_15_Wait_Part_V_Mixing {
 		driver.get("http://facebook.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		
-		
+
 		System.out.println(" TC_02_Element_Not_Found_Only_Implicit: " + getDateTimeSecondNow() + " ------ ");
 		try {
 			WebElement emailTextbox = driver.findElement(By.xpath("//input[@id='automation_testing']"));
@@ -62,19 +59,16 @@ public class Topic_15_Wait_Part_V_Mixing {
 		// Timeout trong exception là 5s
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		explicitWait = new WebDriverWait(driver, 5);
-		System.out.println(
-				"TC_03_Element_Not_Found_Implicit_Greater_Than_Explicit: " + getDateTimeSecondNow() + " ---- ");
+		System.out.println("TC_03_Element_Not_Found_Implicit_Greater_Than_Explicit: " + getDateTimeSecondNow() + " ---- ");
 		try {
 			// Tham số của hàm wait trong explicit là By
-			explicitWait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='djfkdsjfkldsjf']")));
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='djfkdsjfkldsjf']")));
 			System.out.println("Switch to try");
 		} catch (Exception ex) {
 			System.out.println("TC_03_Element_Not_Found_Implicit_Greater_Than_Explicit: " + ex.getMessage());
 			System.out.println("------------------ Exception của explicit --------------");
 		}
-		System.out.println(
-				"TC_03_Element_Not_Found_Implicit_Greater_Than_Explicit: " + getDateTimeSecondNow() + " ---- ");
+		System.out.println("TC_03_Element_Not_Found_Implicit_Greater_Than_Explicit: " + getDateTimeSecondNow() + " ---- ");
 	}
 
 	@Test
@@ -88,11 +82,9 @@ public class Topic_15_Wait_Part_V_Mixing {
 		System.out.println("TC_05_Element_Not_Found_Only_Explicit_By: " + getDateTimeSecondNow() + " --------- ");
 		try {
 			// Tham số của hàm wait trong explicit là WebElement
-			explicitWait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='tao_ko_co_o_day']")));
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='tao_ko_co_o_day']")));
 
-			explicitWait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='tao_ko_co_o_day']")));
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='tao_ko_co_o_day']")));
 
 			System.out.println("Switch to try");
 		} catch (Exception ex) {
